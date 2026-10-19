@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a0f2e">
+<title>Happy Birthday, Nakchidi 💖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="balloons" aria-hidden="true"></div>
+
+<div id="gate">
+  <button id="envelope" aria-label="Open your birthday surprise">
+    <span class="flap"></span><span class="heart">💌</span>
+  </button>
+  <p>Nakchidi… something is waiting for you<br><small>tap the envelope</small></p>
+</div>
+
+<div id="cd" hidden></div>
+
+<main id="site" hidden>
+
+  <section class="hero">
+    <svg class="thread" viewBox="0 0 400 120" aria-hidden="true">
+      <path id="tpath" d="M30 90 C 120 -10, 280 -10, 370 90"/>
+      <circle cx="30" cy="90" r="6" class="star-a"/><circle cx="370" cy="90" r="6" class="star-b"/>
+    </svg>
+    <p class="small">21 October · she turns nineteen</p>
+    <h1><span class="hb">Happy Birthday,</span><br><span id="name">Nakchidi</span></h1>
+    <p class="sub">To my Mdm Ji, the girl I have never met<br>and still love with my whole heart 🌙</p>
+    <div id="count" class="count" aria-live="polite"></div>
+    <a href="#photo" class="scroll">scroll down, love ↓</a>
+  </section>
+
+  <section id="photo" class="wrap reveal">
+    <div class="polaroid" id="pol">
+      <div class="ring"></div>
+      <img src="photo.jpg" alt="Nakchidi" width="400" height="400">
+      <p>My Nakchidi 💖</p>
+    </div>
+    <p class="cap">The prettiest girl in my whole world. Tap her photo 😉</p>
+  </section>
+
+  <section id="love" class="wrap reveal love">
+    <h2>I have something to say…</h2>
+    <p class="hint">Tap the heart again and again. Let's fill my love meter!</p>
+    <button id="lheart" class="lheart" aria-label="Tap to fill love meter">❤️</button>
+    <div class="meter"><i id="mfill"></i></div>
+    <p id="mpct" class="mpct">0%</p>
+    <p id="lmsg" class="lmsg"></p>
+  </section>
+
+  <section id="letter" class="wrap reveal">
+    <h2>A letter from my heart</h2>
+    <div class="paper"><p id="typed" aria-live="polite"></p></div>
+  </section>
+
+  <section class="wrap reveal">
+    <h2>Shayari, only for you</h2>
+    <p class="hint">Words I wrote with my heart, Nakchidi</p>
+    <div id="shayari"></div>
+  </section>
+
+  <section class="wrap reveal">
+    <h2>19 reasons I love you</h2>
+    <p class="hint">Tap each heart to open it</p>
+    <div id="reasons" class="grid"></div>
+  </section>
+
+  <section class="wrap reveal quotes">
+    <h2>Words for the miles between us</h2>
+    <blockquote id="quote"></blockquote>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <section class="wrap reveal cake-sec">
+    <h2>Make a wish, Nakchidi</h2>
+    <p class="hint" id="cakehint">Tap the candles to blow them out 🕯️</p>
+    <div class="cake">
+      <div class="candles" id="candles"></div>
+      <div class="tier t1"></div><div class="tier t2"></div><div class="plate"></div>
+    </div>
+    <p id="wishmsg" class="wishmsg"></p>
+  </section>
+
+  <section class="wrap reveal end">
+    <h2>Until the day I meet you</h2>
+    <p>Distance is only a number. One day I will hold your hand, look into your eyes, and tell you in person that you are my whole world.</p>
+    <p class="big">I love you, Nakchidi 💖</p>
+    <p class="sign">Forever yours,<br><span id="from">Your Person</span></p>
+    <button id="boom" class="btn">Celebrate once more 🎆</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
